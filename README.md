@@ -4,6 +4,7 @@ Basically there is a client script which reads the file operations.txt, sends th
 
 The server receives the information through a socket, does the arithmetic calcultions without using an EVAL and returns the response to the client.
 
+
 ## Supported Platforms
 
 * [Python](http://www.python.org/) >= 3.6
@@ -31,7 +32,7 @@ server.start()
 ```
 
 ```bash
-python3.6 socket_client.py
+python socket_client.py
 ```
 
 ## Versioning

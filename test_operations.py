@@ -11,8 +11,8 @@ class TestOperations(unittest.TestCase):
 
         operations = [operator.add]
         numbers = [1, 2]
-        blueliv = Operations()
-        operations, result = blueliv.operate(operator.add, operations, numbers)
+        operations = Operations()
+        operations, result = operations.operate(operator.add, operations, numbers)
         self.assertEqual(operations, [])
         self.assertEqual(result[0], 3)
 
@@ -20,8 +20,8 @@ class TestOperations(unittest.TestCase):
 
         operations = [operator.sub]
         numbers = [1, 2]
-        blueliv = Operations()
-        operations, result = blueliv.operate(operator.sub, operations, numbers)
+        operations = Operations()
+        operations, result = operations.operate(operator.sub, operations, numbers)
         self.assertEqual(operations, [])
         self.assertEqual(result[0], -1)
 
@@ -29,8 +29,8 @@ class TestOperations(unittest.TestCase):
 
         operations = [operator.mul]
         numbers = [1, 2]
-        blueliv = Operations()
-        operations, result = blueliv.operate(operator.mul, operations, numbers)
+        operations = Operations()
+        operations, result = operations.operate(operator.mul, operations, numbers)
         self.assertEqual(operations, [])
         self.assertEqual(result[0], 2)
 
@@ -38,8 +38,8 @@ class TestOperations(unittest.TestCase):
 
         operations = [operator.truediv]
         numbers = [1, 2]
-        blueliv = Operations()
-        operations, result = blueliv.operate(operator.truediv, operations,
+        operations = Operations()
+        operations, result = operations.operate(operator.truediv, operations,
                                              numbers)
         self.assertEqual(operations, [])
         self.assertEqual(result[0], 0.5)
@@ -47,8 +47,8 @@ class TestOperations(unittest.TestCase):
     def test_calculate(self):
 
         input_string = b'26 * 99 - 37 * 38 + 50 + 48 / 45 + 90 + 22 - 44'
-        blueliv = Operations()
-        self.assertEqual(blueliv.main(input_string), b'1287.0666666666666')
+        operations = Operations()
+        self.assertEqual(operations.main(input_string), b'1287.0666666666666')
 
 
 if __name__ == '__main__':

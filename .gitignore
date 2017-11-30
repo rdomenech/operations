@@ -1,0 +1,9 @@
+# Folders
+#########
+__pycache__/
+.idea/
+
+# File extensions
+################
+*.pyc
+*.7z

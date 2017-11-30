@@ -2,7 +2,7 @@
 
 Basically there is a client script which reads the file operations.txt, sends the information from the file to a server through a socket, receive the response and writes it in a file called results.txt.
 
-The server receives the information through a socket, does the arithmetic calcultions without using an EVAL and returns the response.
+The server receives the information through a socket, does the arithmetic calcultions without using an EVAL and returns the response to the client.
 
 ## Supported Platforms
 
